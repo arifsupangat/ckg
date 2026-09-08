@@ -710,6 +710,7 @@ chrome.runtime.onMessage.addListener(async(request, sender, sendResponse) => {
     getElementByXpath("//input[@value=\"PPV00000883\"]")?.click(); //tidak batuk
     await delay(500);
     getElementByXpath("//input[@value='Kirim']")?.click();
+	sendResponse({status: "skrining TB Dewasa Lansia terisi"});
   }
 
   if (request.action === "risikoKankerUsus") {
