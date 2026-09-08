@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Layanan CKG",
+  "version": "1.0",
+  "description": "Input Pelayanan CKG",
+  "permissions": ["tabs", "storage", "scripting","sidePanel"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sehatindonesiaku.kemkes.go.id/*",
+        "https://form.kemkes.go.id/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
+

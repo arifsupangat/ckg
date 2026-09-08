@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Automation Sidebar</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; }
+    button { display: block; margin: 5px 0; padding: 8px 12px; width: 100%; }
+  </style>
+</head>
+<body>
+  <h3>isilah yang dibutuhkan saja</h3>
+  <table>
+	<colgroup>
+		<col style="width:50%;"/>
+		<col style="width:30%;"/>
+		<col style="width:20%;"/>
+	</colgroup>
+    <tr>
+        <td>bb lahir</td><td><input id="bb-lahir" style="width:30px;"/></td><td>gr</td>
+    </tr>
+    <tr>
+        <td>tb lahir</td><td><input id="tb-lahir" style="width:30px;"/></td><td>cm</td>
+    </tr>
+    <tr>
+        <td>bb sekarang</td><td><input id="bb-sekarang" style="width:30px;"/></td><td>kg</td>
+    </tr>
+    <tr>
+        <td>tb sekarang</td><td><input id="tb-sekarang" style="width:30px;"/></td><td>cm</td>
+    </tr>
+    <tr>
+        <td>lingkar perut</td><td><input id="lingkar-perut" style="width:30px;"/></td><td>cm</td>
+    </tr>
+    <tr>
+        <td>Tensi</td><td><input id="sistole" style="width:30px;"/>/<input id="diastole" style="width:30px;"/></td><td>mmHg</td>
+    </tr>
+    <tr>
+        <td>GDS</td><td><input id="gds" style="width:30px;"/></td><td>mg/dL</td>
+    </tr>
+  </table>
+  <p><span class='span-kluster' >Anak</span> | <span class='span-kluster'>Remaja</span> | <span class='span-kluster'>Dewasa</span> | <span class='span-kluster'>Controller</span></p>
+  <div class="div-kluster anak">
+    <button data-action="disabilitas">Demografi</button>
+    <button data-action="diabetes">Resiko Gula Darah pada Anak</button>
+    <button data-action="imunisasiRutin">Imunisasi Rutin pada Balita</button>
+    <button data-action="imt">Gizi Anak IMT/U</button>
+    <button data-action="tbbb">Skrining Pertumbuhan - Balita dan Anak Prasekolah 1-5 Tahun</button>
+    <button data-action="telingamata12">Skrining Telinga dan Mata (1-2 tahun)</button>
+    <button data-action="telingamata3456">Skrining Telinga dan Mata - Balita dan Anak Prasekolah</button>
+    <button data-action="gds">Pemeriksaan Gula Darah Anak</button>
+    <button data-action="gilut">Pemeriksaan Gigi - Anak</button>
+    <button data-action="tb">Faktor Risiko dan Skrining X-Ray TB (Anak 1-9 tahun)</button>
+    <button data-action="epidTB">Pemeriksaan Tuberkulosis (Anak)</button>
+    <button data-action="frambusia">Pemeriksaan Penyakit Frambusia (untuk daerah endemis atau berisiko frambusia)</button>
+    <button data-action="kusta">Pemeriksaan Penyakit Kusta</button>
+    <button data-action="skabies">Pemeriksaan Penyakit Skabies</button>
+    <button data-action="imunisasiHepatitis">imunisasi hepatitis B</button>
+    <button data-action="bbLahir">Berat Lahir</button>
+    <button data-action="jantungBawaan">Skrining Penyakit Jantung Bawaan</button>
+    <button data-action="kulitTinja">Edukasi Warna Kulit dan Tinja Bayi</button>
+  </div>
+  <div class="div-kluster remaja">
+    <button data-action="diabetes">Resiko Gula Darah pada Anak</button>
+    <button data-action="risikoMalaria">Faktor Risiko Malaria</button>
+    <button data-action="gejalaCemas">Gejala Cemas Remaja</button>
+    <button data-action="gejalaDepresi">Gejala Depresi Remaja</button>
+    <button data-action="reproduksiPutra">Kesehatan Reproduksi Putra - Anak Sekolah</button>
+    <button data-action="aktivitasRemaja">Kuesioner Tingkat Aktivitas Fisik - Tingkat Aktivitas Fisik</button>
+    <button data-action="kebugaran">Kelayakan Tes Kebugaran</button>
+    <button data-action="merokokSekolah">Perilaku Merokok - Anak Sekolah</button>
+    <button data-action="hepatitisSMPSMA">Faktor Risiko Hepatitis SMP dan SMA</button>
+     <button data-action="imt">Gizi Anak IMT/U</button>
+    <button data-action="tensiAnakRemaja">Tekanan Darah Anak dan Remaja</button>
+    <button data-action="gds">Pemeriksaan Gula Darah Anak</button>
+    <button data-action="tbDewasaLansia">Faktor Risiko dan Skrining X-Ray TB (Dewasa & Lansia)</button>
+    <button data-action="epidTB">Pemeriksaan Tuberkulosis (Anak)</button>
+    <button data-action="telingaMataSekolah">Skrining Telinga dan Mata - Anak Sekolah</button>
+    <button data-action="gilutAnak">Pemeriksaan Gigi - Anak</button>
+    <button data-action="kebugaranJasmani">Hasil Pemeriksaan Kebugaran Jasmani Anak</button>
+    <button data-action="frambusia">Pemeriksaan Penyakit Frambusia (untuk daerah endemis atau berisiko frambusia)</button>
+    <button data-action="kusta">Pemeriksaan Penyakit Kusta</button>
+    <button data-action="skabies">Pemeriksaan Penyakit Skabies</button>
+  </div>
+  <div class="div-kluster dewasa">
+    <button data-action="demografiDewasaPerempuan">Demografi Dewasa Perempuan</button>
+    <button data-action="demografiDewasaLaki">Demografi Dewasa Laki-Laki</button>
+    <button data-action="demografiLansia">Demografi Lansia</button>
+    <button data-action="risikoTBdewasaLansia">Faktor Risiko TB - Dewasa & Lansia</button>
+    <button data-action="risikoKankerUsus">Faktor Risiko Kanker Usus</button>
+    <button data-action="hati">Hati</button>
+    <button data-action="keswa">Kesehatan Jiwa</button>
+    <button data-action="risikoKankerLeherRahim">Kanker Leher Rahim</button>
+    <button data-action="merokok">Perilaku Merokok</button>
+    <button data-action="kankerParu">Penapisan Risiko Kanker Paru</button>
+    <button data-action="aktivitas">Tingkat Aktivitas Fisik (sedang dan berat)</button>
+    <button data-action="imtDewasaPerempuan">Gizi (BB - TB - Lingkar Perut) Perempuan</button>
+    <button data-action="imtDewasaLaki">Gizi (BB - TB - Lingkar Perut) Laki-laki</button>
+    <button data-action="gdsDewasaLansia">Pemeriksaan Gula Darah Dewasa Lansia</button>
+    <button data-action="gilutDewasa">Skrining Karies dan Gigi Hilang</button>
+	<button data-action="periodontal">Skrining Penyakit Periodontal</button>
+    <button data-action="tensiDewasaLansia">Tekanan Darah Dewasa Lansia</button>
+    <button data-action="tbDewasaLansiaXray">Faktor Risiko dan Skrining X-Ray TB (Dewasa & Lansia)</button>
+    <button data-action="epidTB">Pemeriksaan Tuberkulosis (Dewasa & Lansia)</button>
+    <button data-action="mataTelinga1839">Skrining Telinga dan Mata usia 18 - 39</button>
+    <button data-action="mataTelinga40">Skrining Telinga dan Mata (=>40 tahun)</button>
+	<button data-action="kankerParu45">Skrining Kanker Paru (Usia =>45 thn)</button>
+  </div>
+  <div class="div-kluster controller">
+    <button id="toggleSequence">Start Autofill individual</button>
+  </div>
+  <div id="status"></div>
+  <script src="sidebar.js"></script>
+</body>
+</html>
